@@ -1,0 +1,50 @@
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    .btn-container{
+        display: flex;
+        flex-direction: row;
+
+        .btn-add,.btn-remove{
+            height: 45px;
+            width: 75px;
+            margin: 5px;
+        }
+        .btn-add{
+            color: white;
+            background-color: green;
+        }
+        .btn-remove{
+            color: white;
+            background-color: red;
+        }
+    }
+    .box-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        
+        .box{
+            height: 20px;
+            width: 20px;
+            margin: 5px;
+            color: white;
+            background-color: blue;
+            text-align: center;
+        }
+
+        .odd{
+            background-color: black;
+        }
+        .border-enable{
+            border-top:  6px solid #f79014;
+        }
+    }
+    .number{
+        color: black;
+    }
+}
+
