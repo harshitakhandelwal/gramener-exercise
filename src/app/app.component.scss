@@ -1,50 +1,67 @@
-
-.container{
+.main-container{
+  font-family: sans-serif;
+  .no-box, .number {
+    text-align: center;
+  }
+  .no-box {
+    margin-top: 10px;
+  }
+  .number {
+   font-size: 6rem;
+  }
+  .title-container {
+    p, h1 {
+      text-align: center;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+  align-items: center;
+  .btn-container{
     display: flex;
-    flex-direction: column;
-    align-content: center;
-
-    .btn-container{
-        display: flex;
-        flex-direction: row;
-
-        .btn-add,.btn-remove{
-            height: 45px;
-            width: 75px;
-            margin: 5px;
-        }
-        .btn-add{
-            color: white;
-            background-color: green;
-        }
-        .btn-remove{
-            color: white;
-            background-color: red;
-        }
+    align-items: center;
+    justify-content: center;
+    .btn-add,.btn-remove{
+      height: 45px;
+      width: 85px;
+      margin: 5px;
+      font-size: 1rem;
     }
-    .box-container{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        
-        .box{
-            height: 20px;
-            width: 20px;
-            margin: 5px;
-            color: white;
-            background-color: blue;
-            text-align: center;
-        }
-
-        .odd{
-            background-color: black;
-        }
-        .border-enable{
-            border-top:  6px solid #f79014;
-        }
+    .btn-add{
+      color: white;
+      background-color: green;
     }
-    .number{
-        color: black;
+    .btn-remove{
+      color: white;
+      background-color: red;
     }
-}
+  }
+  .box-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .box{
+      height: 20px;
+      width: 20px;
+      margin: 11px 2px 5px 2px;
+      color: white;
+      background-color: blue;
+      text-align: center;
+    }
+    .odd{
+      background-color: black;
+    }
+    .border-enable{
+      border-top: 6px solid #f79014;
+      margin: 5px 2px;
+     }
+  }
+  .number{
+    color: black;
+  }
+ }
 

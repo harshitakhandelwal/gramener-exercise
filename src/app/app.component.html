@@ -1,15 +1,16 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div class="container">
-  <div class="btn-container">
-      <button class="btn-add" (click)="OnAddbtnClick()">Add Box</button>
-      <button class="btn-remove" (click)="OnRemovebtnClick()">Remove</button>
+<div class="main-container">
+  <div class="title-container">
+    <h1>Box Builder</h1>
+    <p>Start building</p>
   </div>
-  <div class="no-box" *ngIf="counter===0">No Boxes</div>
-<div class="box-container" >
-<div  class="box" *ngFor="let box of boxes" [ngClass]="{'odd':(box%2)==0 , 'border-enable':(box%5)==0}">{{box}}</div>
-</div>
-<div class="number" *ngIf="counter!=0">
-  {{counter}}
-</div>
-</div>
+  <div class="btn-container">
+    <button class="btn-add" (click)="OnAddbtnClick()">Add Box</button>
+    <button class="btn-remove" (click)="OnRemovebtnClick()">Remove</button>
+  </div>
+  <div class="box-container" >
+    <div  class="box" *ngFor="let box of boxes" [ngClass]="{'odd':(box%2)==0 , 'border-enable':(box%5)==0}">{{box}}</div>
+   </div>
+ <div class="number" *ngIf="counter!=0">{{counter}}</div>
+   <div class="no-box" *ngIf="counter===0">No Boxes</div>
+ </div>
 
